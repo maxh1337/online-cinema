@@ -9,8 +9,9 @@ import { Types } from 'mongoose'
 @Injectable()
 export class MovieService {
 	constructor(
-		@InjectModel(MovieModel) private readonly MovieModel: ModelType<MovieModel>
-	) {}
+		@InjectModel(MovieModel) private readonly MovieModel: ModelType<MovieModel>,
+	) {
+	}
 
 	async getAll(searchTerm?: string) {
 		let options = {}
@@ -24,7 +25,9 @@ export class MovieService {
 				],
 			}
 
-		return this.MovieModel.find(options)
+
+		return this.MovieModel
+			.find(options)
 			.select('-updatedAt -__v')
 			.sort({
 				createdAt: 'desc',
@@ -70,7 +73,7 @@ export class MovieService {
 			},
 			{
 				new: true,
-			}
+			},
 		).exec()
 		if (!updateDoc) throw new NotFoundException('Movie not found')
 
@@ -85,7 +88,7 @@ export class MovieService {
 			},
 			{
 				new: true,
-			}
+			},
 		).exec()
 	}
 

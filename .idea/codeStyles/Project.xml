@@ -1,5 +1,6 @@
 <component name="ProjectCodeStyleConfiguration">
   <code_scheme name="Project" version="173">
+    <option name="RIGHT_MARGIN" value="80" />
     <HTMLCodeStyleSettings>
       <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
       <option name="HTML_QUOTE_STYLE" value="Single" />
@@ -29,6 +30,9 @@
       <option name="INTERPOLATION_NEW_LINE_AFTER_START_DELIMITER" value="false" />
       <option name="INTERPOLATION_NEW_LINE_BEFORE_END_DELIMITER" value="false" />
     </VueCodeStyleSettings>
+    <codeStyleSettings language="EditorConfig">
+      <option name="SPACE_AFTER_COLON" value="true" />
+    </codeStyleSettings>
     <codeStyleSettings language="HTML">
       <option name="SOFT_MARGINS" value="80" />
       <indentOptions>
@@ -40,6 +44,9 @@
     </codeStyleSettings>
     <codeStyleSettings language="JavaScript">
       <option name="RIGHT_MARGIN" value="80" />
+      <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
+      <option name="KEEP_SIMPLE_BLOCKS_IN_ONE_LINE" value="true" />
+      <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
       <option name="SOFT_MARGINS" value="80" />
       <indentOptions>
         <option name="INDENT_SIZE" value="2" />
@@ -49,6 +56,9 @@
       </indentOptions>
     </codeStyleSettings>
     <codeStyleSettings language="TypeScript">
+      <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
+      <option name="KEEP_SIMPLE_BLOCKS_IN_ONE_LINE" value="true" />
+      <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
       <option name="SOFT_MARGINS" value="80" />
       <indentOptions>
         <option name="INDENT_SIZE" value="2" />

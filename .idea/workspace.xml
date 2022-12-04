@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1b65f3a9-918d-4154-b94f-dace650c9e2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -15,11 +18,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/back" />
   </component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2I5EzW9s7LEt4SoFnQ9MYJEuNXN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,16 +42,31 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.17.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.17.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/PET Projects/online-cinemaa/front&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\PET Projects\\online-cinema\\back\\node_modules\\prettier&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\PET Projects\\online-cinemaa\\front\\node_modules\\prettier&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\PET Projects\\online-cinema\\back\\node_modules\\typescript\\lib&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.JavaScript&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\PET Projects\\online-cinemaa\\front\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PET Projects\online-cinemaa\front" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PET Projects\online-cinemaa\front\public" />
+      <recent name="C:\PET Projects\online-cinemaa\front\app\providers\HeadProvider" />
+      <recent name="C:\PET Projects\online-cinemaa\front\app\assets\styles" />
+      <recent name="C:\PET Projects\online-cinemaa\front\app\components\layout\Sidebar\Search" />
+      <recent name="C:\PET Projects\online-cinemaa\front\app\components\layout\Sidebar\Search\SearchList" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\Максим\AppData\Roaming\Subversion</configuration>
@@ -77,6 +99,35 @@
       <workItem from="1669537962757" duration="154000" />
       <workItem from="1669538128978" duration="230000" />
       <workItem from="1669541463086" duration="468000" />
+      <workItem from="1669581526457" duration="102000" />
+      <workItem from="1669581659410" duration="19000" />
+      <workItem from="1669656401304" duration="142000" />
+      <workItem from="1669661356721" duration="17000" />
+      <workItem from="1669661413500" duration="183000" />
+      <workItem from="1669661774894" duration="158000" />
+      <workItem from="1669661970599" duration="185000" />
+      <workItem from="1669662164763" duration="51000" />
+      <workItem from="1669662225411" duration="383000" />
+      <workItem from="1669662620178" duration="241000" />
+      <workItem from="1669662872633" duration="36000" />
+      <workItem from="1669662918403" duration="112000" />
+      <workItem from="1669719423714" duration="6000" />
+      <workItem from="1669811527775" duration="79000" />
+      <workItem from="1669903041720" duration="823000" />
+      <workItem from="1669911084695" duration="571000" />
+      <workItem from="1669911675382" duration="363000" />
+      <workItem from="1669912051548" duration="61000" />
+      <workItem from="1669912189726" duration="796000" />
+      <workItem from="1669913007035" duration="772000" />
+      <workItem from="1669921959650" duration="2350000" />
+      <workItem from="1669924354716" duration="1250000" />
+      <workItem from="1669925632656" duration="3596000" />
+      <workItem from="1669968663712" duration="9274000" />
+      <workItem from="1669991305181" duration="11290000" />
+      <workItem from="1670016332802" duration="14000" />
+      <workItem from="1670060624900" duration="9597000" />
+      <workItem from="1670073285297" duration="10715000" />
+      <workItem from="1670098840213" duration="655000" />
     </task>
     <servers />
   </component>

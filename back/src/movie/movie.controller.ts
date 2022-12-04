@@ -6,7 +6,7 @@ import {
 	HttpCode,
 	Param,
 	Post,
-	Put,
+	Put, Query,
 	UsePipes,
 	ValidationPipe,
 } from '@nestjs/common'
@@ -20,7 +20,8 @@ import { CreateMovieDto } from './create-movie.dto'
 
 @Controller('movies')
 export class MovieController {
-	constructor(private readonly movieService: MovieService) {}
+	constructor(private readonly movieService: MovieService) {
+	}
 
 	@Get('by-slug/:slug')
 	async bySlug(@Param('slug') slug: string) {
@@ -40,7 +41,7 @@ export class MovieController {
 	}
 
 	@Get()
-	async getAll(@Param('searchTerm') searchTerm?: string) {
+	async getAll(@Query('searchTerm') searchTerm?: string) {
 		return this.movieService.getAll(searchTerm)
 	}
 
@@ -67,7 +68,7 @@ export class MovieController {
 	@Auth('admin')
 	async update(
 		@Param('id', IdValidationPipe) id: string,
-		@Body() dto: CreateMovieDto
+		@Body() dto: CreateMovieDto,
 	) {
 		return this.movieService.update(id, dto)
 	}
