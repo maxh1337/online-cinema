@@ -22,6 +22,6 @@
 
 
 
-## Run the Web Application steps:
+## Run Web Application steps:
 
  Use `yarn | npm start:dev` at /backend and `yarn | npm dev` at front
