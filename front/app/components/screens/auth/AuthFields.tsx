@@ -1,12 +1,15 @@
-import { FC } from 'react'
+import { FC, RefAttributes } from 'react'
 import { FormState, UseFormRegister } from 'react-hook-form'
-import Field from '@/components/ui/form-elements/Field'
-import { validEmail } from '@/shared/regex'
 
+import { IAuthInterface } from '@/components/screens/auth/auth.interface'
+import Field from '@/components/ui/form-elements/Field'
+import { IFieldProps } from '@/components/ui/form-elements/form.interface'
+
+import { validEmail } from '@/shared/regex'
 
 interface IAuthFields {
 	register: UseFormRegister<any>
-	formState: FormState<any>
+	formState: FormState<IAuthInterface>
 	isPasswordRequired?: boolean
 }
 
@@ -17,24 +20,34 @@ const AuthFields: FC<IAuthFields> = ({
 }) => {
 	return (
 		<>
-			<Field {...register('email', {
-				required: 'Email is required',
-				pattern: {
-					value: validEmail,
-					message: 'Please enter a valid email address',
-				},
-			})}
-						 placeholder='E-mail' error={errors.email}
-			/>
-			<Field {...register('password', isPasswordRequired ? {
-					required: 'Password is required',
-					minLength: {
-						value: 6,
-						message: 'Your password is too short',
+			<Field
+				{...register('email', {
+					required: 'Email is required',
+					pattern: {
+						value: validEmail,
+						message: 'Please enter a valid email address',
 					},
-				} : {},
-			)}
-						 placeholder='Password' error={errors.password} type='password'
+				})}
+				placeholder="E-mail"
+				type="email"
+				error={errors.email}
+			/>
+			<Field
+				{...register(
+					'password',
+					isPasswordRequired
+						? {
+								required: 'Password is required',
+								minLength: {
+									value: 6,
+									message: 'Your password is too short',
+								},
+						  }
+						: {}
+				)}
+				placeholder="Password"
+				type="password"
+				error={errors.password}
 			/>
 		</>
 	)

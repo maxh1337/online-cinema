@@ -26,7 +26,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2I5EzW9s7LEt4SoFnQ9MYJEuNXN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -50,8 +50,8 @@
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\PET Projects\\online-cinemaa\\front\\node_modules\\prettier&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.JavaScript&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\PET Projects\\online-cinemaa\\front\\node_modules\\typescript\\lib&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\PET Projects\\online-cinemaa\\back\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -128,6 +128,13 @@
       <workItem from="1670060624900" duration="9597000" />
       <workItem from="1670073285297" duration="10715000" />
       <workItem from="1670098840213" duration="655000" />
+      <workItem from="1670146756512" duration="8913000" />
+      <workItem from="1670160161816" duration="512000" />
+      <workItem from="1670164313478" duration="5562000" />
+      <workItem from="1670258401222" duration="2763000" />
+      <workItem from="1670265586108" duration="2355000" />
+      <workItem from="1670315499742" duration="2225000" />
+      <workItem from="1670347768926" duration="4122000" />
     </task>
     <servers />
   </component>

@@ -15,7 +15,7 @@ import { RefreshTokenDto } from './dto/refreshToken.dto'
 export class AuthService {
 	constructor(
 		@InjectModel(UserModel) private readonly UserModel: ModelType<UserModel>,
-		private readonly jwtService: JwtService
+		private readonly jwtService: JwtService,
 	) {}
 
 	async login(dto: AuthDto) {
@@ -48,7 +48,7 @@ export class AuthService {
 		const oldUser = await this.UserModel.findOne({ email: dto.email })
 		if (oldUser) {
 			throw new BadRequestException(
-				'User with this email is already in the system'
+				'User with this email is already in the system',
 			)
 		}
 		const salt = await genSalt(10)
@@ -66,7 +66,8 @@ export class AuthService {
 	}
 
 	async findByEmail(email: string) {
-		return this.UserModel.findOne({ email }).exec()
+		return this.UserModel.findOne({ email })
+			.exec()
 	}
 
 	async validateUser(dto: AuthDto): Promise<UserModel> {

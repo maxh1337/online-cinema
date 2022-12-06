@@ -1,6 +1,6 @@
 import { ChangeEvent, FC } from 'react'
 import styles from './SearchField.module.scss'
-import MaterialIcon from '@/components/ui/MaterialIcon'
+import { MaterialIcon } from '@/components/ui/MaterialIcon'
 
 interface ISearchField {
 	searchTerm: string

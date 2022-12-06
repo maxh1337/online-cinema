@@ -1,20 +1,27 @@
 import { FC, useState } from 'react'
-import { useAuthRedirect } from '@/components/screens/auth/useAuthRedirect'
-import { useAuth } from '@/hooks/useAuth'
 import { SubmitHandler, useForm } from 'react-hook-form'
+
+import AuthFields from '@/components/screens/auth/AuthFields'
 import { IAuthInterface } from '@/components/screens/auth/auth.interface'
+import { useAuthRedirect } from '@/components/screens/auth/useAuthRedirect'
+import Button from '@/components/ui/form-elements/Button'
+import Heading from '@/components/ui/heading/Heading'
+
+import { useActions } from '@/hooks/useActions'
+import { useAuth } from '@/hooks/useAuth'
+
+import Meta from '@/utils/meta/Meta'
 
 import styles from './Auth.module.scss'
-import Meta from '@/utils/meta/Meta'
-import Heading from '@/components/ui/heading/Heading'
-import Button from '@/components/ui/form-elements/Button'
-import AuthFields from '@/components/screens/auth/AuthFields'
 
 const Auth: FC = () => {
 	useAuthRedirect()
 
-	const { isLoading } = useAuth()
+	const isLoading = useAuth()
+	const user = useAuth()
+
 	const [type, setType] = useState<'login' | 'register'>('login')
+
 	const {
 		register: registerInput,
 		handleSubmit,
@@ -24,11 +31,10 @@ const Auth: FC = () => {
 		mode: 'onChange',
 	})
 
-	const login = (data: any) => {
-	}
-	const register = (data: any) => {
-	}
+	const { login, register } = useActions()
+
 	const onSubmit: SubmitHandler<IAuthInterface> = (data) => {
+		console.log(user.user)
 		if (type === 'login') login(data)
 		else if (type === 'register') register(data)
 
@@ -36,17 +42,30 @@ const Auth: FC = () => {
 	}
 
 	return (
-		<Meta title='Auth'>
+		<Meta title="Auth">
 			<section className={styles.wrapper}>
 				<form onSubmit={handleSubmit(onSubmit)}>
-					<Heading title='Auth' className='mb-6 text-2xl' />
-					<AuthFields register={registerInput} formState={formState}
-											isPasswordRequired={true} />
+					<Heading title="Auth" className="mb-6 text-2xl" />
+					<AuthFields
+						register={registerInput}
+						formState={formState}
+						isPasswordRequired={true}
+					/>
 					<div className={styles.buttons}>
-						<Button type='submit' onClick={() => setType('login')}
-										disabled={isLoading}>Login</Button>
-						<Button type='submit' onClick={() => setType('register')}
-										disabled={isLoading}>Register</Button>
+						<Button
+							type="submit"
+							onClick={() => setType('login')}
+							// disabled={isLoading}
+						>
+							Login
+						</Button>
+						<Button
+							type="submit"
+							onClick={() => setType('register')}
+							// disabled={isLoading}
+						>
+							Register
+						</Button>
 					</div>
 				</form>
 			</section>
