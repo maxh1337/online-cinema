@@ -34,7 +34,6 @@ const Auth: FC = () => {
 	const { login, register } = useActions()
 
 	const onSubmit: SubmitHandler<IAuthInterface> = (data) => {
-		console.log(user.user)
 		if (type === 'login') login(data)
 		else if (type === 'register') register(data)
 

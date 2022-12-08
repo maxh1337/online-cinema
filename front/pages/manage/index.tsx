@@ -1,11 +1,11 @@
 import { NextPage } from 'next'
 
-const Index: NextPage = () => {
-	return (
-		<div>
+import { NextPageAuth } from '@/shared/types/auth.type'
 
-		</div>
-	)
+const AdminPage: NextPageAuth = () => {
+	return <div></div>
 }
 
-export default Index
+AdminPage.isOnlyAdmin = true
+
+export default AdminPage

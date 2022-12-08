@@ -5,7 +5,6 @@ import { useAuth } from '@/hooks/useAuth'
 
 export const useAuthRedirect = () => {
 	const { user } = useAuth()
-	console.log(user)
 
 	const { query, push } = useRouter()
 
