@@ -9,7 +9,7 @@ import Heading from '@/components/ui/heading/Heading'
 
 import { useActions } from '@/hooks/useActions'
 import { useAuth } from '@/hooks/useAuth'
-
+ 
 import Meta from '@/utils/meta/Meta'
 
 import styles from './Auth.module.scss'

@@ -26,7 +26,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2I5EzW9s7LEt4SoFnQ9MYJEuNXN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,26 +35,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.17.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.17.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/PET Projects/online-cinemaa/front&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\PET Projects\\online-cinemaa\\front\\node_modules\\prettier&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\PET Projects\\online-cinemaa\\back\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "14.17.0",
+    "javascript.nodejs.core.library.typings.version": "14.17.0",
+    "last_opened_file_path": "C:/PET Projects/online-cinemaa/front",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "C:\\PET Projects\\online-cinemaa\\front\\node_modules\\prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.sourceCode.SCSS",
+    "ts.external.directory.path": "C:\\PET Projects\\online-cinemaa\\back\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\PET Projects\online-cinemaa\front" />
@@ -137,7 +137,9 @@
       <workItem from="1670347768926" duration="4917000" />
       <workItem from="1670434294747" duration="1833000" />
       <workItem from="1670437088400" duration="543000" />
-      <workItem from="1670487618400" duration="2402000" />
+      <workItem from="1670487618400" duration="3457000" />
+      <workItem from="1670498615086" duration="267000" />
+      <workItem from="1670498900225" duration="3993000" />
     </task>
     <servers />
   </component>
