@@ -10,10 +10,8 @@ import {
 	UsePipes,
 	ValidationPipe,
 } from '@nestjs/common'
-import { GenreService } from '../genre/genre.service'
 import { Auth } from '../auth/decorators/auth.decorator'
 import { IdValidationPipe } from '../pipes/id.validation.pipe'
-import { CreateGenreDto } from '../genre/dto/create-genre.dto'
 import { MovieService } from './movie.service'
 import { Types } from 'mongoose'
 import { CreateMovieDto } from './create-movie.dto'
@@ -28,7 +26,7 @@ export class MovieController {
 		return this.movieService.bySlug(slug)
 	}
 
-	@Get('by-actor/:actorId')
+	@Get('by-movie/:actorId')
 	async byActor(@Param('actorId', IdValidationPipe) actorId: Types.ObjectId) {
 		return this.movieService.byActor(actorId)
 	}

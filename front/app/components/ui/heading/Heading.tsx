@@ -8,7 +8,7 @@ interface IHeading {
 const Heading: FC<IHeading> = ({ title, className }) => {
 	return (
 		<h1
-			className={`text-white text-opacity-80 font-semibold ${className?.includes(
+			className={`text-white text-opacity-80 font-semibold text-2xl ${className?.includes(
 				'xl' ? '' : 'text-3xl'
 			)} ${className}`}
 		>

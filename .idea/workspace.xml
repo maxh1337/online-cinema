@@ -26,7 +26,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2I5EzW9s7LEt4SoFnQ9MYJEuNXN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,36 +35,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "14.17.0",
-    "javascript.nodejs.core.library.typings.version": "14.17.0",
-    "last_opened_file_path": "C:/PET Projects/online-cinemaa/front",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "C:\\PET Projects\\online-cinemaa\\front\\node_modules\\prettier",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.sourceCode.SCSS",
-    "ts.external.directory.path": "C:\\PET Projects\\online-cinemaa\\back\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.17.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.17.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/PET Projects/online-cinemaa/front/pages/manage/movie&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\PET Projects\\online-cinemaa\\front\\node_modules\\prettier&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\PET Projects\\online-cinemaa\\back\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PET Projects\online-cinemaa\front\pages\manage\movie" />
+      <recent name="C:\PET Projects\online-cinemaa\front\app\components\screens\admin\movies" />
+      <recent name="C:\PET Projects\online-cinemaa\front\app\components\screens\admin\actors\actor" />
+      <recent name="C:\PET Projects\online-cinemaa\front\app\components\screens\admin" />
       <recent name="C:\PET Projects\online-cinemaa\front" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PET Projects\online-cinemaa\front\app\components\ui\admin-table\AdminHeader" />
+      <recent name="C:\PET Projects\online-cinemaa\front\app\components\ui\admin-table\AdminHeader\AdminCreateButton" />
+      <recent name="C:\PET Projects\online-cinemaa\front\app\components\screens\admin\home" />
       <recent name="C:\PET Projects\online-cinemaa\front\public" />
       <recent name="C:\PET Projects\online-cinemaa\front\app\providers\HeadProvider" />
-      <recent name="C:\PET Projects\online-cinemaa\front\app\assets\styles" />
-      <recent name="C:\PET Projects\online-cinemaa\front\app\components\layout\Sidebar\Search" />
-      <recent name="C:\PET Projects\online-cinemaa\front\app\components\layout\Sidebar\Search\SearchList" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -139,7 +143,18 @@
       <workItem from="1670437088400" duration="543000" />
       <workItem from="1670487618400" duration="3457000" />
       <workItem from="1670498615086" duration="267000" />
-      <workItem from="1670498900225" duration="3993000" />
+      <workItem from="1670498900225" duration="17503000" />
+      <workItem from="1670528755386" duration="561000" />
+      <workItem from="1670529341594" duration="575000" />
+      <workItem from="1670530661085" duration="2529000" />
+      <workItem from="1670577077797" duration="2704000" />
+      <workItem from="1670597635665" duration="656000" />
+      <workItem from="1670620008834" duration="122000" />
+      <workItem from="1670661451115" duration="11560000" />
+      <workItem from="1670747460911" duration="6346000" />
+      <workItem from="1670756467642" duration="869000" />
+      <workItem from="1670758711324" duration="87000" />
+      <workItem from="1670869595257" duration="9169000" />
     </task>
     <servers />
   </component>

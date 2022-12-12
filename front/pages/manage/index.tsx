@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 
-import Admin from '@/components/screens/admin/Admin'
+import Admin from '@/components/screens/admin/home/Admin'
 
 import { NextPageAuth } from '@/shared/types/auth.type'
 

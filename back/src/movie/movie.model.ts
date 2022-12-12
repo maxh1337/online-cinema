@@ -1,10 +1,12 @@
-import { IsArray, IsBoolean, IsNumber, IsString } from 'class-validator'
-import { TimeStamps } from '@typegoose/typegoose/lib/defaultClasses'
+import { IsNumber } from 'class-validator'
+import { Base, TimeStamps } from '@typegoose/typegoose/lib/defaultClasses'
 import { prop, Ref } from '@typegoose/typegoose'
 import { ActorModel } from '../actor/actor.model'
 import { GenreModel } from '../genre/genre.model'
 
-export class Parameters {
+export interface MovieModel extends Base {}
+
+export class Parameter {
 	@IsNumber()
 	year: number
 
@@ -29,7 +31,7 @@ export class MovieModel extends TimeStamps {
 	slug: string
 
 	@prop()
-	parameters?: Parameters
+	parameters?: Parameter
 
 	@prop({ default: 4.0 })
 	rating?: number

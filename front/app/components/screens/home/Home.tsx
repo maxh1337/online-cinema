@@ -1,13 +1,23 @@
 import { FC } from 'react'
-import { IHome } from './home.interface'
-import Meta from '@/utils/meta/Meta'
-import Heading from '@/components/ui/heading/Heading'
 
-const Home: FC<IHome> = () => {
+import Heading from '@/components/ui/heading/Heading'
+import Slider from '@/components/ui/slider/Slider'
+
+import Meta from '@/utils/meta/Meta'
+
+import { IHome } from './home.interface'
+
+const Home: FC<IHome> = ({ slides }) => {
 	return (
-		<Meta title='Watch movies online'
-					description='Watch movies and TV shows online or stream right to your browser'>
-			<Heading title='Watch movies online' className='text-gray-600 mb-8 text-xl	' />
+		<Meta
+			title="Watch movies online"
+			description="Watch movies and TV shows online or stream right to your browser"
+		>
+			<Heading
+				title="Watch movies online"
+				className="text-gray-600 mb-8 text-xl	"
+			/>
+			{slides.length && <Slider slides={slides} />}
 		</Meta>
 	)
 }

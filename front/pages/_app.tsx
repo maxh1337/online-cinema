@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 
 import '@/assets/styles/globals.scss'
+import '@/assets/styles/react-select.scss'
 
 import { TypeComponentAuthFields } from '@/shared/types/auth.type'
 

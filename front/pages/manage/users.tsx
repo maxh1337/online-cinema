@@ -1,9 +1,9 @@
-import { FC } from 'react'
+import UserList from '@/components/screens/admin/users/UserList'
 
 import { NextPageAuth } from '@/shared/types/auth.type'
 
 const UserListPage: NextPageAuth = () => {
-	return <div></div>
+	return <UserList />
 }
 
 UserListPage.isOnlyAdmin = true

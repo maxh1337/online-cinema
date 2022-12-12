@@ -1,7 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common'
 import { InjectModel } from 'nestjs-typegoose'
 import { ModelType } from '@typegoose/typegoose/lib/types'
-import { ActorDto } from '../actor/actor.dto'
 import { MovieModel } from './movie.model'
 import { CreateMovieDto } from './create-movie.dto'
 import { Types } from 'mongoose'
@@ -45,7 +44,8 @@ export class MovieService {
 	}
 
 	async byActor(actorId: Types.ObjectId) {
-		const doc = await this.MovieModel.find({ actors: actorId }).exec()
+		const doc = await this.MovieModel.find({ actors: actorId })
+			.exec()
 		if (!doc) throw new NotFoundException('Movies not found')
 		return doc
 	}
@@ -53,7 +53,8 @@ export class MovieService {
 	async byGenres(genreIds: Types.ObjectId[]) {
 		const docs = await this.MovieModel.find({
 			genres: { $in: genreIds },
-		}).exec()
+		})
+			.exec()
 		if (!docs) throw new NotFoundException('Movies not found')
 		return docs
 	}
@@ -74,7 +75,8 @@ export class MovieService {
 			{
 				new: true,
 			},
-		).exec()
+		)
+			.exec()
 		if (!updateDoc) throw new NotFoundException('Movie not found')
 
 		return updateDoc
@@ -89,7 +91,8 @@ export class MovieService {
 			{
 				new: true,
 			},
-		).exec()
+		)
+			.exec()
 	}
 
 	//Admin
@@ -119,7 +122,8 @@ export class MovieService {
 
 		const updateDoc = await this.MovieModel.findByIdAndUpdate(_id, dto, {
 			new: true,
-		}).exec()
+		})
+			.exec()
 
 		if (!updateDoc) throw new NotFoundException('Movie not found')
 
@@ -127,7 +131,8 @@ export class MovieService {
 	}
 
 	async delete(id: string) {
-		const deleteDoc = this.MovieModel.findByIdAndDelete(id).exec()
+		const deleteDoc = this.MovieModel.findByIdAndDelete(id)
+			.exec()
 
 		if (!deleteDoc) throw new NotFoundException('Movie not found')
 

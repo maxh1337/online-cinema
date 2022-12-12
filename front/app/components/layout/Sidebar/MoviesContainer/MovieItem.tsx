@@ -23,7 +23,7 @@ const MovieItem: FC<{ movie: IMovie }> = ({ movie }) => {
 						width={65}
 						height={97}
 						src={movie.poster}
-						priority={false}
+						priority={true}
 					/>
 				</a>
 			</Link>
