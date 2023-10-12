@@ -56,6 +56,7 @@ const Home: FC<IHome> = () => {
 
 	const trendingMovies = slides
 
+	// @ts-ignore
 	return (
 		<Meta
 			title="Watch movies online"
