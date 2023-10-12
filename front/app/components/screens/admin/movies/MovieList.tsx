@@ -18,6 +18,8 @@ const MovieList: FC = () => {
 		createAsync,
 	} = useMovies()
 
+	console.log()
+
 	return (
 		<Meta title="Movies">
 			<AdminNavigation />

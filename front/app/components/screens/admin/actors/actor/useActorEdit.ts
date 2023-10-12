@@ -23,6 +23,7 @@ export const useActorEdit = (setValue: UseFormSetValue<IActorEditInput>) => {
 		{
 			onSuccess: ({ data }) => {
 				getKeys(data).forEach((key) => {
+					// @ts-ignore
 					setValue(key, data[key])
 				})
 			},
