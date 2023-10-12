@@ -24,7 +24,7 @@ export const useActorEdit = (setValue: UseFormSetValue<IActorEditInput>) => {
 			onSuccess: ({ data }) => {
 				getKeys(data).forEach((key) => {
 					// @ts-ignore
-					setValue(key, data[key])
+					setValue(key, data[key]) // check use genre edit to fix problem
 				})
 			},
 			onError: (error) => {

@@ -23,7 +23,8 @@ export const useMovieEdit = (setValue: UseFormSetValue<IMovieEditInput>) => {
 		{
 			onSuccess: ({ data }) => {
 				getKeys(data).forEach((key) => {
-					setValue(key, data[key])
+					// @ts-ignore
+					setValue(key, data[key]) // check use genre edit to fix problem
 				})
 			},
 			onError: (error) => {
